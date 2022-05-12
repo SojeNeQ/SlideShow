@@ -1,0 +1,151 @@
+/* Testovací zona začátek */
+
+/* 1 */
+/* .test {
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    overflow: hidden;
+} */
+
+
+/* 2 */
+/* .myFlex {
+    display: flex;
+} */
+
+/* .test1{
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+} */
+
+
+/* 3 */
+/* .test3 {
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    visibility: hidden;
+} */
+
+/* .test4 {
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    display: none;
+} */
+
+/* .test5 {
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+} */
+
+
+/* 4 */
+/* p ~ ul {
+    background: yellow;
+} */
+
+/* Testovací zona konec */
+
+
+/* Základ stránky  */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(6, 7, 55);
+}
+
+
+/* Obrázek */
+
+.slider {
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 20px 10px 40px;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 26px;
+}
+
+
+/* Dávání na střed */
+
+.middle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Navigace */
+
+.navigation {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 22.4px;
+    display: flex;
+}
+
+
+/* Tlačítko */
+
+.bar {
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 5px 5px 21px;
+}
+
+/* Úprava fotek */
+
+.bar:hover {
+    background: #fff;
+}
+
+input[name="r"] {
+    display: none;
+}
+
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 20%;
+    transition: 1.3s;
+}
+
+/* Posouvání fotek */
+
+#r1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+    margin-left: -20%;
+}
+
+#r3:checked ~ .s1 {
+    margin-left: -40%;
+}
+
+#r4:checked ~ .s1 {
+    margin-left: -60%;
+}
